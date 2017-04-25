@@ -410,7 +410,7 @@ def run_script():
     initial_time=time.time()
     usage="%prog [options] video_file[s]"
     description="This program transcode video files to XviD and MP3 in an AVI format. Output files are optimized for DVD players, but compatible with devices supporting DivX/Xvid. Subtitles are handled automatically and, if present, subtitle files with compatible names will be created for output files or it can be hardsubbed if the appropriate option is selected."
-    version='%prog 2.30'
+    version='%prog 2.3.0'
     parser=optparse.OptionParser(usage=usage,description=description,version=version)
     parser.add_option('-q','--quantizer',type=int,default=4,help='Quantizer value [default: %default]. Determines the output video quality. Smaller values gives better qualities and bigger file sizes, bigger values result in less quality and smaller file sizes. Default value results in a nice quality/size ratio. Quantizer values should be in the range of 2 to 31.')
     parser.add_option('-r','--replace-original-video-file',action='store_true',default=False,dest='replace',help='If True original video files will be erased after transcoding [default: %default]. WARNING: deleted files can not be easily recovered!')
